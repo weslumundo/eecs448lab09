@@ -1,0 +1,34 @@
+ <?php
+	for($i=0;$i<=100;$i++){
+		for($j=0;$j<=100;$j++){
+			if($i==0){
+				if($j==0){
+					echo("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+				}
+				else{
+					echo("&nbsp;&nbsp;");
+					space("$j");
+				}
+			}
+			else{
+				if($j==0){
+					space("$i");
+				}
+				else{
+					$t=$i*$j;
+					echo("&nbsp;&nbsp;");
+					space("$t");
+				}
+			}
+			//if()
+		}
+		echo("<br>");
+	}
+	function space($k) {
+		for($l=5-strlen("$k");$l>0;$l--){
+			echo("&nbsp;&nbsp;");
+		}
+		echo("$k");
+	}
+
+ ?>
