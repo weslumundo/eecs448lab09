@@ -1,34 +1,26 @@
  <?php
+	echo("<table>");
 	for($i=0;$i<=100;$i++){
+		echo("<tr>");
 		for($j=0;$j<=100;$j++){
 			if($i==0){
 				if($j==0){
-					echo("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+					echo("<td> </td>");
 				}
 				else{
-					echo("&nbsp;&nbsp;");
-					space("$j");
+					echo("<td>$j</td>");
 				}
 			}
 			else{
 				if($j==0){
-					space("$i");
+					echo("<td>$i</td>");
 				}
 				else{
 					$t=$i*$j;
-					echo("&nbsp;&nbsp;");
-					space("$t");
+					echo("<td>$t</td>");
 				}
 			}
-			//if()
 		}
-		echo("<br>");
+		echo("</tr>");
 	}
-	function space($k) {
-		for($l=5-strlen("$k");$l>0;$l--){
-			echo("&nbsp;&nbsp;");
-		}
-		echo("$k");
-	}
-
  ?>
