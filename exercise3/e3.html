@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="e3.css">
+		<script type="text/javascript" src="e3.js"></script>
+	</head>
+	<body>
+		<form onsubmit="return errorCheck()" action="e3.php" method="post">
+			<div id="first">
+				Name:<input type="text" name="name" id="name">
+			</div>
+			<div>
+			Password:<input type="text" name="pass" id="pass">
+			</div>
+			<h2>Select your purchases</h2>
+			<div>The Elder Scrolls V: Skyrim - $30<input class="shop" name="s1" type="number" name="" value="0" id="s1"></div>
+			<div>The Elder Scrolls V: Skyrim Special Edition - $40<input name="s2" class="shop" type="number" value="0" id="s2"></div>
+			<div>The Elder Scrolls V: Skyrim Legendary Edition - $50<input name="s3" class="shop" type="number" value="0" id="s3"></div>
+			<div>The Elder Scrolls V: Skyrim VR - $60<input class="shop" name="s4" type="number" value="0" id="s4"></div>
+	
+			<h2>Shipping opition</h2>
+			<div>
+				<input type="radio" name="ship" value="7" id="seven">
+				<label for="free">Free - Seven Day</label>
+				<br>
+				<input type="radio" name="ship" value="o" id="overNight">
+				<label for="overNight">$50.00 - Overnight</label>
+				<br>
+				<input type="radio" name="ship" value="3" id="threeDay">
+				<label for="threeDay">$5.00 - Three Day</label>
+			</div>
+			<input id="submit" type="submit"><input type="reset">
+		</form>
+	</body>
+</html>

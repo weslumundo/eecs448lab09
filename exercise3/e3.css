@@ -1,0 +1,25 @@
+div{
+	margin-left:40%;
+	margin-top:0.5%;
+}
+h2{
+	margin-left:40%
+}
+body{
+	background:gray;
+}
+#first{
+	margin-top:5%;
+}
+#submit{
+	margin-top:2%;
+	margin-left:40%;
+}
+input.shop{
+	width:5%;
+}
+p{
+	margin-top:5%;
+	font-size:20pt;
+	text-align:center;
+}
